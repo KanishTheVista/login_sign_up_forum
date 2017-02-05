@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function validate(){
+
+var name=document.getElementById("name").value;
+var password=document.getElementById("password").value;
+if(name!="root" || password!="root"){
+document.getElementById("display").innerHTML="NOT VALID";
+}
+else{
+document.getElementById("display").innerHTML="VALID";
+window.location="username.html";
+}
+
+}
+</script>
+</head>
+<body>
+<div id="login">
+
+<h1>LOGIN HERE</h1>
+<input id="name" placeholder="UserName"> 
+<input id="password" type="password" placeholder="PassWord">
+<input type="submit" onclick="validate()" value="Submit">
+
+</div>
+<div id="display"></div>
+</body>
+</html>
